@@ -24,6 +24,24 @@
   background-color: #4caf4f;
 }
 
+.sec_head {
+  text-align: center;
+}
+
+.sec_head h2 {
+  font-size: 2.268rem;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 8px;
+}
+
+.sec_head p {
+  font-size: 1rem;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 16px;
+}
+
 /* Header Style */
 header {
   background-color: #f5f7fa;
@@ -117,32 +135,51 @@ header {
 }
 
 /* Clients Section Style */
-
-/* .clients_sec {
-} */
-
-.clients_sec_head {
-  text-align: center;
+.clients_images {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  align-items: center;
+  margin-bottom: 40px;
 }
 
-.clients_sec_head h2 {
-  font-size: 2.268rem;
-  font-weight: 600;
+/* Services Section */
+.service_sec {
+  margin-bottom: 42px;
+}
+
+.service_sec .sec_head p {
+  margin-bottom: 16px;
+}
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service {
+  text-align: center;
+  max-width: 300px;
+  padding: 24px 16px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(171, 190, 209, 0.2);
+}
+
+.service img {
+  margin-bottom: 16px;
+}
+
+.service h3 {
+  font-size: 1.764rem;
+  font-weight: 700;
   color: #4d4d4d;
   margin-bottom: 8px;
 }
 
-.clients_sec_head p {
-  font-size: 1rem;
+.service p {
+  font-size: 0.882rem;
   font-weight: 400;
   color: #717171;
-  margin-bottom: 16px;
-}
-
-.clients_images {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 }
 
 /* Mobile Devices (up to 576px) */
@@ -150,7 +187,8 @@ header {
   /* Common Style */
   .navbar,
   .banner,
-  .clients_sec {
+  .clients_sec,
+  .service_sec {
     width: 85%;
   }
 
@@ -178,8 +216,16 @@ header {
 
   /* Clients Section */
   .clients_images {
+    grid-template-columns: repeat(2, 1fr);
+    place-items: center;
+    gap: 20px;
+  }
+
+  /* Services Section */
+  .services {
+    flex-wrap: wrap;
     justify-content: center;
-    gap: 7px;
+    gap: 24px;
   }
 }
 
@@ -188,7 +234,8 @@ header {
   /* Common style */
   .navbar,
   .banner,
-  .clients_sec {
+  .clients_sec,
+  .service_sec {
     width: 90%;
   }
 
@@ -210,5 +257,12 @@ header {
 
   .banner_img img {
     width: 100%;
+  }
+
+  /* Services Section */
+  .services {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 24px;
   }
 }
