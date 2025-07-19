@@ -181,6 +181,31 @@ header {
   font-weight: 400;
   color: #717171;
 }
+/* Pixelfrade Style  */
+.pixelfrade_sec {
+  margin-bottom: 50px;
+}
+
+.pixelfrade_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+}
+
+.pixelfrade_content h3 {
+  font-size: 2.268rem;
+  font-weight: 600;
+  color: #4d4d4d;
+  margin-bottom: 16px;
+}
+
+.pixelfrade_content p {
+  font-size: 0.882rem;
+  font-weight: 400;
+  color: #717171;
+  margin-bottom: 46px;
+}
 
 /* Mobile Devices (up to 576px) */
 @media screen and (max-width: 576px) {
@@ -188,7 +213,8 @@ header {
   .navbar,
   .banner,
   .clients_sec,
-  .service_sec {
+  .service_sec,
+  .pixelfrade_sec {
     width: 85%;
   }
 
@@ -226,6 +252,20 @@ header {
     flex-wrap: wrap;
     justify-content: center;
     gap: 24px;
+  }
+
+  /* pixelfrade Section */
+  .pixelfrade_container {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .pixelfrade_img img {
+    width: 100%;
+  }
+
+  .pixelfrade_content {
+    text-align: center;
   }
 }
 
